@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements - Waterstone College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1>Waterstone College</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="announcements-section">
+    <h2>Latest Announcements</h2>
+    <p>Stay up to date with all the latest happenings at Waterstone College. Check back frequently for news on events, school activities, and important updates.</p>
+
+    <div class="announcement">
+        <h3>School Sports Day - 2024</h3>
+        <p><strong>Date:</strong> 15th November 2024</p>
+        <p><strong>Details:</strong> Our annual Sports Day is just around the corner! Join us for an exciting day filled with athletic competitions, team-building activities, and fun. All students are encouraged to participate. Parents are welcome to attend and cheer on their children.</p>
+        <button onclick="toggleDetails('sportsDayDetails')">Read More</button>
+        <div id="sportsDayDetails" style="display:none;">
+            <p>Details: This year's event will feature relay races, long jump, sprints, and more. A special guest speaker will be joining us to motivate students to achieve their best. Refreshments will be available at the venue. Don't miss this exciting day!</p>
+        </div>
+    </div>
+
+    <div class="announcement">
+        <h3>Waterstone College Heritage Week</h3>
+        <p><strong>Date:</strong> 20th November - 24th November 2024</p>
+        <p><strong>Details:</strong> Waterstone College celebrates its rich heritage during this week. Activities will include cultural exhibitions, guest speakers, and performances showcasing the history and values of our school.</p>
+        <button onclick="toggleDetails('heritageWeekDetails')">Read More</button>
+        <div id="heritageWeekDetails" style="display:none;">
+            <p>Details: Students and staff will participate in various events that celebrate the history of Waterstone College. There will be a heritage parade, art exhibits, and a cultural night with food and music. We invite all families to join us for this week of celebration!</p>
+        </div>
+    </div>
+
+    <div class="announcement">
+        <h3>Term 4 Parent-Teacher Conferences</h3>
+        <p><strong>Date:</strong> 10th December 2024</p>
+        <p><strong>Details:</strong> The Term 4 Parent-Teacher Conferences will be held on December 10th. Parents are invited to meet with their child's teachers to discuss their progress and achievements throughout the term. Please schedule your meeting through the school portal.</p>
+    </div>
+
+    <h3>Archived Announcements</h3>
+    <p>Click below to view past announcements and updates.</p>
+    <a href="archives.html">View Archived Announcements</a>
+</section>
+
+<footer>
+    <p>© 2024 Waterstone College. All rights reserved.</p>
+</footer>
+
+<script>
+    function toggleDetails(announcementId) {
+        var details = document.getElementById(announcementId);
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
